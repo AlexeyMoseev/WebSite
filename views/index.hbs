@@ -1,2 +1,8 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<p>{{message}}</p>
+<form id="form" action="/users" method="POST">
+	<input id="email" name="email" type="email" required="required" />
+	<input id="password1" name="password" type="password" required="required" minlength="8" />
+	<input id="password2" name="password" type="password" required="required" minlength="8" />
+	<input type="submit" value="Отправить"/>
+</form>
